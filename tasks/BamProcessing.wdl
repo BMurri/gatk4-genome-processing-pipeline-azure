@@ -193,7 +193,7 @@ task MarkDuplicatesSpark {
   >>>
 
   runtime {
-    docker: "jamesemery/gatknightly:gatkMasterSnapshot44ca2e9e84a"
+    docker: "bmtestacr.azurecr.io/docker/jamesemery/gatknightly:gatkMasterSnapshot44ca2e9e84a"
     disk: "/mnt/tmp " + ceil(2.1 * total_input_size) + " LOCAL, local-disk " + disk_size + " GB"
     cpu: cpu_size
     memory: "~{memory_size} GB"

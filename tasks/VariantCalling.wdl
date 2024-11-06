@@ -8,7 +8,7 @@ version 1.0
 import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/GermlineVariantDiscovery.wdl" as Calling
 import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/Qc.wdl" as QC
 import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/Utilities.wdl" as Utils
-import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/BamProcessing.wdl" as BamProcessing
+import "https://raw.githubusercontent.com/BMurri/gatk4-genome-processing-pipeline-azure/bmtestacr/tasks/BamProcessing.wdl" as BamProcessing
 
 workflow VariantCalling {
 
@@ -185,7 +185,7 @@ task MergeBamouts {
   }
 
   runtime {
-    docker: "biocontainers/samtools:1.3.1"
+    docker: "bmtestacr.azurecr.io/docker/biocontainers/samtools:1.3.1"
     memory: "4 GB"
     disk: "~{disk_size} GB"
     preemptible: true

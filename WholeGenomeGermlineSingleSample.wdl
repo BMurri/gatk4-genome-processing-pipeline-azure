@@ -35,11 +35,11 @@ version 1.0
 #import "./tasks/VariantCalling.wdl" as ToGvcf
 #import "./structs/GermlineStructs.wdl"
 
-import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/UnmappedBamToAlignedBam.wdl" as ToBam
+import "https://raw.githubusercontent.com/BMurri/gatk4-genome-processing-pipeline-azure/bmtestacr/tasks/UnmappedBamToAlignedBam.wdl" as ToBam
 import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/AggregatedBamQC.wdl" as AggregatedQC
 import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/Qc.wdl" as QC
 import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/BamToCram.wdl" as ToCram
-import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/tasks/VariantCalling.wdl" as ToGvcf
+import "https://raw.githubusercontent.com/BMurri/gatk4-genome-processing-pipeline-azure/bmtestacr/tasks/VariantCalling.wdl" as ToGvcf
 import "https://raw.githubusercontent.com/microsoft/gatk4-genome-processing-pipeline-azure/az1.1.0/structs/GermlineStructs.wdl"
 
 # WORKFLOW DEFINITION
